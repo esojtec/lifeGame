@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Juego de la vida</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="js/life.js"></script>
+    </head>
+    <body>
+        <div class="title">Juego de la vida</div>
+        <div class="form">
+            <div class="w70 left">
+            <label>x: </label>
+                <input type="text" value="10" onkeyup="l.setx(this.value)" />
+                <label>y: </label>
+                <input type="text" value="10" onkeyup="l.sety(this.value)" />
+            </div>
+            <div class="w30 left">
+                <input type="button" value="Generar tablero" onClick="l.board();" />
+            </div>
+            <div class="w30 right">
+                <input type="button" value="Iniciar" onClick="l.start();" />
+                <input type="button" value="Detener" onClick="l.stop();" />
+            </div>
+        </div>
+        <div class="clear"></div>
+        <script>
+            //Inciamos la clase para el Juego de la vida
+            var l = new life();
+            //Graficamos el tablero con los valores por defecto
+            l.board();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+.title{
+    clear: both;
+    font: 34px/40px Arial;
+    text-align: center;
+}
+
+.form{
+    clear: both;
+    margin: 10px auto;
+    width: 500px;
+}
+
+.row{
+    width: 100%;
+    clear: both;
+}
+
+.w70{
+    float: left;
+    width: 70%;
+}
+
+.w30{
+    float: left;
+    width: 30%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+canvas{
+    margin:0 auto;
+    display: block;
+}
+
+.clear{
+    zoom: 1;
+    clear: both;
+    min-height: 1px;
+}
